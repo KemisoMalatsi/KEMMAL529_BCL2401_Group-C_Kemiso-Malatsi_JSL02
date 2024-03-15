@@ -1,0 +1,98 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for background and color changes */
+}
+
+#watch-container { 
+    border-radius: 50px;
+    background: linear-gradient(145deg, #5f9ea0, #008b8b);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+button {
+    background-color: #48d1cc;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #20b2aa;
+}
+
+input[type="text"], form {
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    border: 2px solid #008b8b;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#themeToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #2f4f4f;
+    color: white; /* Ensure the toggle button text is visible */
+}
+
+.dark-theme {
+    color: #dcdcdc; /* Lighter font color for readability in dark mode */
+}
+
+.dark-theme #watch-container {
+    background: linear-gradient(145deg, #243b55, #141e30);
+}
+
+.dark-theme button {
+    background-color: #556;
+    color: #ccc;
+}
+
+.dark-theme input[type="text"] {
+    background-color: #333;
+    color: #ccc;
+    border-color: #444;
+}
+
+.dark-theme #themeToggle {
+    background: #444;
+}
+
+
+#welcomeMessage {
+    font-size: 1.2em;
+    font-weight: 600;
+    
+}
